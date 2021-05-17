@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quieres ser mi novia?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style type="text/css">
+    
+  .boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .boton:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+</style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('SABÍA QUE ACEPTARIAS <3');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+
+            
+
+        }
+    </script>
+</head>
+<body>
+
+    <center> <h1>Quieres ser mi novia?</h1>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" class="boton" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" class="boton" />
+    <img src="img/cat.png" width="250">
+    <h1>the winnyx</h1>
+
+    </center>
+</body>
+</html>
